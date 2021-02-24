@@ -4,13 +4,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby File.read(".ruby-version").chomp
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem "rails", "~> 6.1.1"
+gem "rails", "~> 6.1.3"
 
 # Use postgresql as the database for Active Record
 gem "pg", ">= 0.18", "< 2.0"
 
 # Use Puma as the app server
-gem "puma", "~> 5.1"
+gem "puma", "~> 5.2"
 
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem "webpacker"
@@ -45,7 +45,7 @@ group :development, :test do
   # Testing framework
   gem "rspec-rails", "~> 4.0.2"
   # Adds support for Capybara system testing and selenium driver
-  gem "capybara", "~> 3.34"
+  gem "capybara", "~> 3.35"
 
   gem "dotenv-rails"
 end
@@ -61,7 +61,7 @@ group :development do
 end
 
 group :test do
-  gem "webdrivers", "~> 4.4"
+  gem "webdrivers", "~> 4.5"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
